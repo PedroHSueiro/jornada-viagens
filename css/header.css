@@ -3,7 +3,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   padding: 37px 48px;
   position: relative;
 }
@@ -15,7 +15,7 @@ header {
 }
 
 .navigation-menu {
-  margin-top: 18px;
+  height: 32px;
 }
 
 .navigation-menu label {
@@ -49,4 +49,32 @@ nav {
 .navigation-list li a {
   color: var(--text-secondary-color);
   text-decoration: none;
+  font-weight: var(--menu-font-weight);
+  font-size: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation-menu {
+    margin: 0;
+    width: 467px;
+  }
+
+  .navigation-menu label {
+    display: none;
+  }
+
+  .navigation-menu nav {
+    display: block;
+  }
+
+  .navigation-menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+  }
+
+  .navigation-list li {
+    margin: 0;
+  }
 }
