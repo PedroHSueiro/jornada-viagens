@@ -3,7 +3,9 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
   padding: 37px 48px;
+  position: relative;
 }
 
 .logo {
@@ -13,14 +15,38 @@ header {
 }
 
 .navigation-menu {
+  margin-top: 18px;
+}
+
+.navigation-menu label {
   display: inline-block;
-  padding: 24px 4px;
+  height: 32px;
+  width: 32px;
+}
+
+.navigation-menu img {
+  padding: 8px 4px;
 }
 
 input[type="checkbox"]:checked ~ nav {
   display: block;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  width: 100%;
+  background-color: var(--background-secondary-color);
 }
 
 nav {
   display: none;
+}
+
+.navigation-list li {
+  list-style: none;
+  margin: 16px 37px;
+}
+
+.navigation-list li a {
+  color: var(--text-secondary-color);
+  text-decoration: none;
 }
