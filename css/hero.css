@@ -3,12 +3,13 @@
   width: 100%;
   background: url(../img/hero-banner-mobile.jpg) no-repeat center;
   background-size: cover;
+  margin-bottom: var(--section-vertical-padding-mobile);
 }
 
 .hero h2 {
   display: inline-block;
-  padding: var(--section-padding-mobile);
-  color: var(--text-primary-color);
+  padding: var(--section-vertical-padding-mobile)
+    var(--section-horizontal-padding-mobile);
   font-weight: var(--text-font-weight);
   font-size: 20px;
   line-height: 150%;
@@ -23,7 +24,8 @@
   }
 
   .hero h2 {
-    padding: var(--section-padding-tablet);
+    padding: var(--section-vertical-padding-mobile)
+      var(--section-horizontal-padding-tablet);
     font-size: 32px;
   }
 }
@@ -32,9 +34,11 @@
   .hero-image {
     background: url(../img/hero-banner-desktop.jpg) no-repeat center;
     background-size: cover;
+    margin-bottom: var(--section-vertical-padding-desktop);
   }
 
   .hero h2 {
-    padding: var(--section-padding-desktop);
+    padding: var(--section-vertical-padding-desktop)
+      var(--section-horizontal-padding-desktop);
   }
 }

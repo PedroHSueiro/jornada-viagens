@@ -1,0 +1,102 @@
+.offers {
+  padding: var(--section-vertical-padding-mobile)
+    var(--section-horizontal-padding-mobile);
+}
+
+.offers-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.offers-card {
+  width: 312px;
+  height: 288px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: var(--text-secondary-color);
+  text-align: center;
+  border-radius: 16px;
+}
+
+.offers-card.japan {
+  background-image: var(--card-overlay), url(../img/cards/bg-card-japan.jpg);
+}
+
+.offers-card.san-andreas {
+  background-image:
+    var(--card-overlay), url(../img/cards/bg-card-san-andreas.jpg);
+}
+
+.offers-card.paraiba {
+  background-image: var(--card-overlay), url(../img/cards/bg-card-paraiba.jpg);
+}
+
+.offers-card.manaus {
+  background-image: var(--card-overlay), url(../img/cards/bg-card-manaus.jpg);
+}
+
+.offers-card header {
+  background-color: transparent;
+  display: block;
+  padding: 24px 0;
+  position: static;
+}
+
+.offers-card header p {
+  font-weight: var(--text-font-weight);
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.offers-card header h3 {
+  font-weight: var(--title-font-weight);
+  font-size: 40px;
+  padding: 8px 0px 24px;
+}
+
+.offers-card header span {
+  font-weight: var(--title-font-weight);
+  font-size: 32px;
+}
+
+@media screen and (min-width: 768px) {
+  .offers {
+    padding: var(--section-vertical-padding-mobile)
+      var(--section-horizontal-padding-tablet);
+  }
+
+  .offers-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .offers {
+    padding: var(--section-vertical-padding-desktop)
+      var(--section-horizontal-padding-desktop);
+  }
+
+  .offers-card {
+    width: 420px;
+    height: 308px;
+  }
+
+  .offers-card header h3 {
+    font-size: 48px;
+  }
+
+  .offers-card header span {
+    font-size: 40px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .offers-card {
+    width: 588px;
+  }
+}
