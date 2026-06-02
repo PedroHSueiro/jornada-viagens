@@ -13,8 +13,23 @@
 .category-icon {
   height: 80px;
   width: 80px;
-  background-color: brown;
   margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.category-icon.national {
+  background-image: url(../img/categories/category-icon-national.png);
+}
+.category-icon.international {
+  background-image: url(../img/categories/category-icon-international.png);
+}
+.category-icon.transfer {
+  background-image: url(../img/categories/category-icon-transfer.png);
+}
+.category-icon.insurance {
+  background-image: url(../img/categories/category-icon-insurance.png);
 }
 
 .category-card h3 {
