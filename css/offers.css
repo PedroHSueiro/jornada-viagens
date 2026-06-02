@@ -82,7 +82,7 @@
   }
 
   .offers-card {
-    width: 420px;
+    width: 400px;
     height: 308px;
   }
 
@@ -98,5 +98,12 @@
 @media screen and (min-width: 1440px) {
   .offers-card {
     width: 588px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .offers-card {
+    width: 688px;
+    height: 328px;
   }
 }
