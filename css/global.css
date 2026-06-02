@@ -27,9 +27,12 @@
   --text-font-weight: 400;
   --title-font-weight: 700;
 
-  --section-padding-mobile: 88px 24px;
-  --section-padding-tablet: 88px 60px;
-  --section-padding-desktop: 104px 8.3%;
+  --section-vertical-padding-mobile: 44px;
+  --section-vertical-padding-desktop: 52px;
+
+  --section-horizontal-padding-mobile: 24px;
+  --section-horizontal-padding-tablet: 60px;
+  --section-horizontal-padding-desktop: 8.3%;
 }
 /* CSS RESET */
 * {
