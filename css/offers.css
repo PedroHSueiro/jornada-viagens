@@ -30,3 +30,18 @@
   font-weight: var(--title-font-weight);
   font-size: 32px;
 }
+
+@media screen and (min-width: 1024px) {
+  .offers-card {
+    width: 588px;
+    height: 308px;
+  }
+
+  .offers-card header h3 {
+    font-size: 48px;
+  }
+
+  .offers-card header span {
+    font-size: 40px;
+  }
+}
