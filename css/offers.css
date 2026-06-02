@@ -1,10 +1,29 @@
 .offers-card {
   width: 312px;
   height: 288px;
-  background-color: darkslategrey;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   color: var(--text-secondary-color);
   text-align: center;
   border-radius: 16px;
+}
+
+.offers-card.japan {
+  background-image: var(--card-overlay), url(../img/cards/bg-card-japan.jpg);
+}
+
+.offers-card.san-andreas {
+  background-image:
+    var(--card-overlay), url(../img/cards/bg-card-san-andreas.jpg);
+}
+
+.offers-card.paraiba {
+  background-image: var(--card-overlay), url(../img/cards/bg-card-paraiba.jpg);
+}
+
+.offers-card.manaus {
+  background-image: var(--card-overlay), url(../img/cards/bg-card-manaus.jpg);
 }
 
 .offers-card header {
