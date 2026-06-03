@@ -6,9 +6,9 @@
 .destinations-container {
   display: flex;
   flex-direction: column;
-  gap: 40px;
   justify-content: center;
   align-items: center;
+  gap: 40px;
 }
 
 .destination-block {
@@ -31,11 +31,11 @@
   background-repeat: no-repeat;
 }
 
-.destination-block .destination-image.tokyo {
+.destination-block header .destination-image.tokyo {
   background-image: url(../img/destinations/tokyo-mobile.jpg);
 }
 
-.destination-block .destination-image.osaka {
+.destination-block header .destination-image.osaka {
   background-image: url(../img/destinations/osaka-mobile.jpg);
 }
 
@@ -49,4 +49,77 @@
   font-size: 20px;
   line-height: 32px;
   padding-bottom: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .destinations {
+    padding: var(--section-vertical-padding-mobile)
+      var(--section-horizontal-padding-tablet);
+  }
+
+  .destination-block {
+    width: 648px;
+  }
+
+  .destination-block header .destination-image {
+    height: 452px;
+    width: 648px;
+  }
+
+  .destination-block header .destination-image.tokyo {
+    background-image: url(../img/destinations/tokyo-tablet-desktop.jpg);
+  }
+
+  .destination-block header .destination-image.osaka {
+    background-image: url(../img/destinations/osaka-tablet-desktop.jpg);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .destinations {
+    padding: var(--section-vertical-padding-desktop)
+      var(--section-horizontal-padding-desktop);
+  }
+
+  .destinations-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .destination-block {
+    width: 412px;
+  }
+
+  .destination-block header .destination-image {
+    height: 380px;
+    width: 412px;
+  }
+
+  .destination-block header .destination-image.tokyo {
+    background-image: url(../img/destinations/tokyo-tablet-desktop.jpg);
+  }
+
+  .destination-block header .destination-image.osaka {
+    background-image: url(../img/destinations/osaka-tablet-desktop.jpg);
+  }
+
+  .destination-block p {
+    height: 216px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .destination-block {
+    width: 588px;
+  }
+
+  .destination-block header .destination-image {
+    height: 452px;
+    width: 588px;
+  }
+
+  .destination-block p {
+    height: auto;
+  }
 }
