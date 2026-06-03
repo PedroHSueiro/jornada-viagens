@@ -49,8 +49,9 @@ body {
 .section-title h2 {
   font-weight: var(--title-font-weight);
   font-size: 28px;
+  max-width: 312px;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 
