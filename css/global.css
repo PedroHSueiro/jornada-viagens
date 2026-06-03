@@ -57,7 +57,7 @@ section.hero {
 
 .section-title h2 {
   font-weight: var(--title-font-weight);
-  font-size: 28px;
+  font-size: 32px;
   max-width: 312px;
   text-align: center;
   margin: 0 auto;
@@ -97,7 +97,7 @@ section.hero {
   }
 
   .section-title h2 {
-    font-size: 32px;
+    max-width: 600px;
   }
 }
 
