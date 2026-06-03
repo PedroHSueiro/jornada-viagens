@@ -21,31 +21,17 @@
   gap: 24px;
   background-color: var(--background-tertiary-color);
   border-radius: 8px;
+  text-decoration: none;
 }
 
 .category-icon {
   height: 80px;
   width: 80px;
   margin: 0 auto;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-}
-
-.category-icon.national {
-  background-image: url(../img/categories/category-icon-national.png);
-}
-.category-icon.international {
-  background-image: url(../img/categories/category-icon-international.png);
-}
-.category-icon.transfer {
-  background-image: url(../img/categories/category-icon-transfer.png);
-}
-.category-icon.insurance {
-  background-image: url(../img/categories/category-icon-insurance.png);
 }
 
 .category-card h3 {
+  color: var(--text-primary-color);
   font-weight: var(--title-font-weight);
   text-align: center;
   font-size: 28px;
