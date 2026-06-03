@@ -46,6 +46,15 @@ body {
   color: var(--text-primary-color);
 }
 
+section {
+  padding: var(--section-vertical-padding-mobile)
+    var(--section-horizontal-padding-mobile);
+}
+
+section.hero {
+  padding: 0;
+}
+
 .section-title h2 {
   font-weight: var(--title-font-weight);
   font-size: 28px;
@@ -82,12 +91,22 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  section {
+    padding: var(--section-vertical-padding-mobile)
+      var(--section-horizontal-padding-tablet);
+  }
+
   .section-title h2 {
     font-size: 32px;
   }
 }
 
 @media screen and (min-width: 1024px) {
+  section {
+    padding: var(--section-vertical-padding-desktop)
+      var(--section-horizontal-padding-desktop);
+  }
+
   .button:hover {
     background-color: var(--highlight-secondary-color);
   }

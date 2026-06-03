@@ -1,8 +1,3 @@
-.categories {
-  padding: var(--section-vertical-padding-mobile)
-    var(--section-horizontal-padding-mobile);
-}
-
 .categories-container {
   display: flex;
   flex-direction: column;
@@ -38,11 +33,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .categories {
-    padding: var(--section-vertical-padding-mobile)
-      var(--section-horizontal-padding-tablet);
-  }
-
   .categories-container {
     flex-direction: row;
     flex-wrap: wrap;
@@ -50,11 +40,6 @@
 }
 
 @media screen and (min-width: 1024px) {
-  .categories {
-    padding: var(--section-vertical-padding-desktop)
-      var(--section-horizontal-padding-desktop);
-  }
-
   .category-card {
     width: 400px;
   }
