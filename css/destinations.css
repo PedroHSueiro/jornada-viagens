@@ -16,13 +16,6 @@
   width: 312px;
 }
 
-.destination-block header {
-  background-color: transparent;
-  display: block;
-  padding: 0;
-  position: static;
-}
-
 .destination-block header .destination-image {
   height: 360px;
   width: 312px;

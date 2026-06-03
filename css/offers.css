@@ -35,10 +35,7 @@
 }
 
 .offers-card header {
-  background-color: transparent;
-  display: block;
   padding: 24px 0;
-  position: static;
 }
 
 .offers-card header p {
