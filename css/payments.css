@@ -1,4 +1,23 @@
-.image-content {
+.payment-grid {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.payment-grid .text-content h3 {
+  font-weight: var(--title-font-weight);
+  font-size: 28px;
+  padding-bottom: 24px;
+}
+
+.payment-grid .text-content p {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.payment-grid .image-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
