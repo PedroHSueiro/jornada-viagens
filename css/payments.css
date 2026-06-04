@@ -1,0 +1,29 @@
+.image-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  justify-items: center;
+}
+
+.payment-grid .image-content .image {
+  height: 254px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.payment-grid .image-content .image.baggage {
+  background-image: url(../img/payments/baggage.jpg);
+}
+
+.payment-grid .image-content .image.passport {
+  background-image: url(../img/payments/passport.jpg);
+}
+
+.payment-grid .image-content .image.people {
+  height: 182px;
+  background-image: url(../img/payments/people.jpg);
+  background-position: bottom;
+  grid-column: span 2;
+}
