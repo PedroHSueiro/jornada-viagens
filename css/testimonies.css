@@ -5,6 +5,12 @@
   gap: 32px;
 }
 
+.client-testimony {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .client-testimony header {
   padding-bottom: 8px;
 }
@@ -55,4 +61,23 @@
   font-size: 40px;
   line-height: 30px;
   color: var(--highlight-primary-color);
+}
+
+@media screen and (min-width: 1440px) {
+  .testimonies-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .client-testimony header {
+    max-width: 384px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .client-testimony header {
+    max-width: 584px;
+  }
 }
