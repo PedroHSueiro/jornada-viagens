@@ -46,3 +46,36 @@
   background-position: bottom;
   grid-column: span 2;
 }
+
+@media screen and (min-width: 768px) {
+  .payment-grid .image-content .image.people {
+    background-position: 0 95%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .payment-grid .image-content .image.people {
+    background-position: 0 83%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .payment-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    justify-items: center;
+  }
+
+  .payment-grid .text-content {
+    width: 100%;
+  }
+  .payment-grid .image-content {
+    grid-column: span 2;
+    width: 100%;
+  }
+
+  .payment-grid .image-content .image.people {
+    background-position: 0 85%;
+  }
+}
