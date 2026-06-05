@@ -20,6 +20,7 @@
   --inputbox-primary-color: #d9d9d9;
 
   --card-overlay: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  --hero-overlay: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
 
   --font-main-name: "Montserrat";
 
@@ -55,6 +56,24 @@ section.hero {
   padding: 0;
 }
 
+.page-title h1 {
+  color: var(--text-secondary-color);
+  font-weight: var(--title-font-weight);
+  font-size: 48px;
+  max-width: 312px;
+  text-align: left;
+  padding: 0;
+}
+
+.separation-line {
+  width: 180px;
+  height: 4px;
+  color: var(--text-secondary-color);
+  background-color: var(--highlight-primary-color);
+  border: none;
+  margin: 16px 0 32px;
+}
+
 .section-title h2 {
   font-weight: var(--title-font-weight);
   font-size: 32px;
@@ -64,11 +83,7 @@ section.hero {
   padding: 0;
 }
 
-.section-title hr {
-  width: 180px;
-  height: 4px;
-  background-color: var(--highlight-primary-color);
-  border: none;
+.section-title .separation-line {
   margin: 16px auto 32px;
 }
 
@@ -106,6 +121,10 @@ section.hero {
   section {
     padding: var(--section-vertical-padding-mobile)
       var(--section-horizontal-padding-tablet);
+  }
+
+  .page-title h1 {
+    max-width: 600px;
   }
 
   .section-title h2 {

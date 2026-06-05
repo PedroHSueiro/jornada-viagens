@@ -61,6 +61,12 @@ nav {
   font-size: 24px;
 }
 
+.navigation-list li a.selected-page {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-underline-offset: 12.5%;
+}
+
 @media screen and (min-width: 768px) {
   .navigation-menu {
     margin: 0;
