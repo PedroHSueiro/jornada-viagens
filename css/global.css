@@ -102,10 +102,6 @@ section.hero {
   text-decoration: none;
 }
 
-.button.large {
-  width: 312px;
-}
-
 @media screen and (min-width: 768px) {
   section {
     padding: var(--section-vertical-padding-mobile)

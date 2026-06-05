@@ -40,6 +40,10 @@
   padding-bottom: 24px;
 }
 
+.destination-block footer .button {
+  width: 100%;
+}
+
 @media screen and (min-width: 768px) {
   .destination-block {
     width: 648px;
@@ -56,6 +60,10 @@
 
   .destination-block.osaka header .destination-image {
     background-image: url(../img/destinations/osaka-tablet-desktop.jpg);
+  }
+
+  .destination-block footer .button {
+    width: 280px;
   }
 }
 
