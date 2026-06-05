@@ -1,8 +1,11 @@
+/* --- BASE HERO --- */
 .hero-image {
   height: 400px;
   width: 100%;
-  background: url(../img/hero-banner-mobile.jpg) no-repeat center;
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
+  background-image: url(../img/hero-banner-mobile.jpg);
   margin-bottom: var(--section-vertical-padding-mobile);
 }
 
@@ -21,14 +24,35 @@
 }
 
 .bottom-hero .hero-image {
-  background: url(../img/footer-banner-mobile.jpg) no-repeat center;
+  background-image: url(../img/footer-banner-mobile.jpg);
   margin: 0;
 }
 
+/* --- TRAVEL PACKAGES HERO --- */
+.hero.travel-packages .hero-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-position: left;
+  background-image:
+    var(--hero-overlay),
+    url(../img/travel-packages/hero-banner-packages-mobile.jpg);
+  padding: 0 var(--section-horizontal-padding-mobile);
+}
+
+.hero.travel-packages h2 {
+  color: var(--text-secondary-color);
+  text-align: left;
+  padding: 0;
+  max-width: 579px;
+}
+
+/* --- MEDIA QUERIES --- */
 @media screen and (min-width: 768px) {
+  /* - BASE HERO - */
   .hero-image {
     height: 620px;
-    background: url(../img/hero-banner-tablet.jpg) no-repeat center;
+    background-image: url(../img/hero-banner-tablet.jpg);
     background-size: cover;
   }
 
@@ -39,13 +63,19 @@
   }
 
   .bottom-hero .hero-image {
-    background: url(../img/footer-banner-tablet.jpg) no-repeat center;
+    background-image: url(../img/footer-banner-tablet.jpg);
+  }
+
+  /* - TRAVEL PACKAGES HERO - */
+  .hero.travel-packages .hero-image {
+    background-image: url(../img/travel-packages/hero-banner-packages-tablet.jpg);
   }
 }
 
 @media screen and (min-width: 1024px) {
+  /* - BASE HERO - */
   .hero-image {
-    background: url(../img/hero-banner-desktop.jpg) no-repeat center;
+    background-image: url(../img/hero-banner-desktop.jpg);
     background-size: cover;
     margin-bottom: var(--section-vertical-padding-desktop);
   }
@@ -56,6 +86,19 @@
   }
 
   .bottom-hero .hero-image {
-    background: url(../img/footer-banner-desktop.jpg) no-repeat center;
+    background-image: url(../img/footer-banner-desktop.jpg);
+  }
+
+  /* - TRAVEL PACKAGES HERO - */
+  .hero.travel-packages .hero-image {
+    background-position: right;
+    background-image: url(../img/travel-packages/hero-banner-packages-desktop.jpg);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* - TRAVEL PACKAGES HERO - */
+  .hero.travel-packages .hero-image {
+    background-position: center;
   }
 }
