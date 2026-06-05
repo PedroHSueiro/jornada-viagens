@@ -6,15 +6,8 @@
   gap: 24px;
 }
 
-.payment-grid .text-content h3 {
-  font-weight: var(--title-font-weight);
-  font-size: 28px;
+.payment-grid .text-content .content-title {
   padding-bottom: 24px;
-}
-
-.payment-grid .text-content p {
-  font-size: 20px;
-  line-height: 32px;
 }
 
 .payment-grid .image-content {
