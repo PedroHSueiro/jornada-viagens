@@ -16,6 +16,15 @@
   text-align: center;
 }
 
+.bottom-hero {
+  padding: 0;
+}
+
+.bottom-hero .hero-image {
+  background: url(../img/footer-banner-mobile.jpg) no-repeat center;
+  margin: 0;
+}
+
 @media screen and (min-width: 768px) {
   .hero-image {
     height: 620px;
@@ -27,6 +36,10 @@
     padding: var(--section-vertical-padding-mobile)
       var(--section-horizontal-padding-tablet);
     font-size: 32px;
+  }
+
+  .bottom-hero .hero-image {
+    background: url(../img/footer-banner-tablet.jpg) no-repeat center;
   }
 }
 
@@ -40,5 +53,9 @@
   .hero h2 {
     padding: var(--section-vertical-padding-desktop)
       var(--section-horizontal-padding-desktop);
+  }
+
+  .bottom-hero .hero-image {
+    background: url(../img/footer-banner-desktop.jpg) no-repeat center;
   }
 }
