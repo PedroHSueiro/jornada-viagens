@@ -1,3 +1,4 @@
+/* --- BASE PAYMENTS --- */
 .payment-grid {
   display: flex;
   flex-direction: column;
@@ -25,34 +26,72 @@
   background-repeat: no-repeat;
 }
 
-.payment-grid .image-content .image.baggage {
+.payment-grid .image-content .image.first {
   background-image: url(../img/payments/baggage.jpg);
 }
 
-.payment-grid .image-content .image.passport {
+.payment-grid .image-content .image.second {
   background-image: url(../img/payments/passport.jpg);
 }
 
-.payment-grid .image-content .image.people {
+.payment-grid .image-content .image.third {
   height: 182px;
   background-image: url(../img/payments/people.jpg);
   background-position: bottom;
   grid-column: span 2;
 }
 
+/* --- TRAVEL PACKAGES PAYMENTS --- */
+.payment-grid .text-content.travel-packages header h3 {
+  font-size: 40px;
+}
+
+.payment-grid .text-content.travel-packages .content-text {
+  padding-bottom: 24px;
+}
+
+.payment-grid .text-content.travel-packages footer .button {
+  width: 100%;
+}
+
+.payment-grid .image-content.travel-packages .image.first {
+  background-image: url(../img/travel-packages/payments/japan-architecture.jpg);
+}
+
+.payment-grid .image-content.travel-packages .image.image.second {
+  background-image: url(../img/travel-packages/payments/japan-night.jpg);
+}
+
+.payment-grid .image-content.travel-packages .image.third {
+  background-image: url(../img/travel-packages/payments/japan-temple.jpg);
+}
+
+/* --- MEDIA QUERIES --- */
 @media screen and (min-width: 768px) {
-  .payment-grid .image-content .image.people {
+  /* - BASE PAYMENTS - */
+  .payment-grid .image-content .image.third {
     background-position: 0 95%;
+  }
+
+  /* - TRAVEL PACKAGES PAYMENTS - */
+  .payment-grid .image-content.travel-packages .image.third {
+    background-position: center;
+  }
+
+  .payment-grid .text-content.travel-packages footer .button {
+    width: 280px;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .payment-grid .image-content .image.people {
+  /* - BASE PAYMENTS - */
+  .payment-grid .image-content .image.third {
     background-position: 0 83%;
   }
 }
 
 @media screen and (min-width: 1440px) {
+  /* - BASE PAYMENTS - */
   .payment-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -68,7 +107,7 @@
     width: 100%;
   }
 
-  .payment-grid .image-content .image.people {
+  .payment-grid .image-content .image.third {
     background-position: 0 85%;
   }
 }
