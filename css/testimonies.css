@@ -15,11 +15,6 @@
   padding-bottom: 8px;
 }
 
-.client-testimony header p {
-  font-size: 16px;
-  line-height: 28px;
-}
-
 .client-testimony footer {
   display: flex;
   flex-direction: row;
@@ -43,7 +38,7 @@
   margin: 7px 0;
 }
 
-.client-testimony footer .profile-content h4 {
+.client-testimony footer .profile-content h3 {
   font-size: 20px;
   line-height: 32px;
   font-weight: var(--title-font-weight);

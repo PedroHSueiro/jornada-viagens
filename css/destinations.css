@@ -32,16 +32,16 @@
   background-image: url(../img/destinations/osaka-mobile.jpg);
 }
 
-.destination-block header h3 {
-  font-weight: var(--title-font-weight);
-  font-size: 28px;
+.destination-block header .content-title {
   padding: 24px 0;
 }
 
-.destination-block p {
-  font-size: 20px;
-  line-height: 32px;
+.destination-block .content-text {
   padding-bottom: 24px;
+}
+
+.destination-block footer .button {
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -60,6 +60,10 @@
 
   .destination-block.osaka header .destination-image {
     background-image: url(../img/destinations/osaka-tablet-desktop.jpg);
+  }
+
+  .destination-block footer .button {
+    width: 280px;
   }
 }
 
