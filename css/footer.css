@@ -9,6 +9,10 @@
   gap: 32px;
 }
 
+.main-footer.blog {
+  margin-top: var(--section-vertical-padding-mobile);
+}
+
 .footer-info {
   display: block;
   text-align: center;
@@ -75,6 +79,10 @@
     flex-direction: row;
     padding: var(--section-vertical-padding-desktop)
       var(--section-horizontal-padding-desktop);
+  }
+
+  .main-footer.blog {
+    margin-top: var(--section-vertical-padding-desktop);
   }
 
   .footer-info {
