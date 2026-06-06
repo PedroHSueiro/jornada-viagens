@@ -55,6 +55,13 @@
   background-image: url(../img/hero/travel-packages/footer-banner-packages-mobile.jpg);
 }
 
+/* --- BLOG HERO --- */
+.hero.page.blog .hero-image {
+  background-position: left;
+  background-image:
+    var(--hero-overlay), url(../img/hero/blog/hero-banner-blog-mobile.jpg);
+}
+
 /* --- MEDIA QUERIES --- */
 @media screen and (min-width: 768px) {
   /* - BASE HERO - */
@@ -90,6 +97,13 @@
   .bottom-hero.travel-packages .hero-image {
     background-image: url(../img/hero/travel-packages/footer-banner-packages-tablet.jpg);
   }
+
+  /* - BLOG HERO - */
+  .hero.page.blog .hero-image {
+    background-position: center;
+    background-image:
+      var(--hero-overlay), url(../img/hero/blog/hero-banner-blog-tablet.jpg);
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -123,6 +137,12 @@
 
   .bottom-hero.travel-packages .hero-image {
     background-image: url(../img/hero/travel-packages/footer-banner-packages-desktop.jpg);
+  }
+
+  /* - BLOG HERO - */
+  .hero.page.blog .hero-image {
+    background-image:
+      var(--hero-overlay), url(../img/hero/blog/hero-banner-blog-desktop.jpg);
   }
 }
 
