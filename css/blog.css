@@ -4,6 +4,47 @@
   gap: 32px;
 }
 
+.blog-post .main-post article .text-content {
+  width: 100%;
+}
+
 .blog-post .main-post article .text-content .content-title {
   padding-bottom: 24px;
+}
+
+.blog-post .main-post .image-post {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.blog-post .main-post .arrival {
+  gap: 24px;
+}
+
+.blog-post .main-post .accommodation {
+  gap: 32px;
+}
+
+.blog-post .main-post article figure .image {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.blog-post .main-post .arrival figure .image {
+  height: 360px;
+  background-image: url(../img/blog/blog-restaurant-mobile.jpg);
+}
+
+.blog-post .main-post .accommodation figure .image {
+  height: 300px;
+  background-image: url(../img/blog/blog-tokyo-city-mobile.jpg);
+}
+
+.blog-post .main-post .accommodation figure figcaption {
+  font-size: 14px;
+  line-height: 28px;
+  padding-top: 8px;
 }
