@@ -27,16 +27,16 @@
 }
 
 .payment-grid .image-content .image.first {
-  background-image: url(../img/payments/baggage.jpg);
+  background-image: url(../img/payments/homepage/baggage.jpg);
 }
 
 .payment-grid .image-content .image.second {
-  background-image: url(../img/payments/passport.jpg);
+  background-image: url(../img/payments/homepage/passport.jpg);
 }
 
 .payment-grid .image-content .image.third {
   height: 182px;
-  background-image: url(../img/payments/people.jpg);
+  background-image: url(../img/payments/homepage/people.jpg);
   background-position: bottom;
   grid-column: span 2;
 }
@@ -55,15 +55,15 @@
 }
 
 .payment-grid .image-content.travel-packages .image.first {
-  background-image: url(../img/travel-packages/payments/japan-architecture.jpg);
+  background-image: url(../img/payments/travel-packages/japan-architecture.jpg);
 }
 
 .payment-grid .image-content.travel-packages .image.image.second {
-  background-image: url(../img/travel-packages/payments/japan-night.jpg);
+  background-image: url(../img/payments/travel-packages/japan-night.jpg);
 }
 
 .payment-grid .image-content.travel-packages .image.third {
-  background-image: url(../img/travel-packages/payments/japan-temple.jpg);
+  background-image: url(../img/payments/travel-packages/japan-temple.jpg);
 }
 
 /* --- MEDIA QUERIES --- */

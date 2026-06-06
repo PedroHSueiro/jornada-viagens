@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url(../img/hero-banner-mobile.jpg);
+  background-image: url(../img/hero/homepage/hero-banner-mobile.jpg);
   margin-bottom: var(--section-vertical-padding-mobile);
 }
 
@@ -24,7 +24,7 @@
 }
 
 .bottom-hero .hero-image {
-  background-image: url(../img/footer-banner-mobile.jpg);
+  background-image: url(../img/hero/homepage/footer-banner-mobile.jpg);
   margin: 0;
 }
 
@@ -48,11 +48,11 @@
   background-position: left;
   background-image:
     var(--hero-overlay),
-    url(../img/travel-packages/hero-banner-packages-mobile.jpg);
+    url(../img/hero/travel-packages/hero-banner-packages-mobile.jpg);
 }
 
 .bottom-hero.travel-packages .hero-image {
-  background-image: url(../img/travel-packages/footer-banner-packages-mobile.jpg);
+  background-image: url(../img/hero/travel-packages/footer-banner-packages-mobile.jpg);
 }
 
 /* --- MEDIA QUERIES --- */
@@ -60,7 +60,7 @@
   /* - BASE HERO - */
   .hero-image {
     height: 620px;
-    background-image: url(../img/hero-banner-tablet.jpg);
+    background-image: url(../img/hero/homepage/hero-banner-tablet.jpg);
     background-size: cover;
   }
 
@@ -71,7 +71,7 @@
   }
 
   .bottom-hero .hero-image {
-    background-image: url(../img/footer-banner-tablet.jpg);
+    background-image: url(../img/hero/homepage/footer-banner-tablet.jpg);
   }
 
   /* - PAGE HERO - */
@@ -84,18 +84,18 @@
     background-position: center;
     background-image:
       var(--hero-overlay),
-      url(../img/travel-packages/hero-banner-packages-tablet.jpg);
+      url(../img/hero/travel-packages/hero-banner-packages-tablet.jpg);
   }
 
   .bottom-hero.travel-packages .hero-image {
-    background-image: url(../img/travel-packages/footer-banner-packages-tablet.jpg);
+    background-image: url(../img/hero/travel-packages/footer-banner-packages-tablet.jpg);
   }
 }
 
 @media screen and (min-width: 1024px) {
   /* - BASE HERO - */
   .hero-image {
-    background-image: url(../img/hero-banner-desktop.jpg);
+    background-image: url(../img/hero/homepage/hero-banner-desktop.jpg);
     background-size: cover;
     margin-bottom: var(--section-vertical-padding-desktop);
   }
@@ -106,7 +106,7 @@
   }
 
   .bottom-hero .hero-image {
-    background-image: url(../img/footer-banner-desktop.jpg);
+    background-image: url(../img/hero/homepage/footer-banner-desktop.jpg);
   }
 
   /* - PAGE HERO - */
@@ -118,11 +118,11 @@
   .hero.page.travel-packages .hero-image {
     background-image:
       var(--hero-overlay),
-      url(../img/travel-packages/hero-banner-packages-desktop.jpg);
+      url(../img/hero/travel-packages/hero-banner-packages-desktop.jpg);
   }
 
   .bottom-hero.travel-packages .hero-image {
-    background-image: url(../img/travel-packages/footer-banner-packages-desktop.jpg);
+    background-image: url(../img/hero/travel-packages/footer-banner-packages-desktop.jpg);
   }
 }
 
