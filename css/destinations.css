@@ -1,24 +1,21 @@
-.destinations {
-  padding: var(--section-vertical-padding-mobile)
-    var(--section-horizontal-padding-mobile);
-}
-
+/* --- BASE DESTINATIONS --- */
 .destinations-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   gap: 40px;
 }
 
 .destination-block {
-  display: block;
-  width: 312px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .destination-block header .destination-image {
   height: 360px;
-  width: 312px;
+  width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -44,14 +41,16 @@
   width: 100%;
 }
 
-@media screen and (min-width: 768px) {
-  .destination-block {
-    width: 648px;
-  }
+/* --- BLOG DESTINATIONS --- */
+.blog .destination-block header .destination-image {
+  height: 300px;
+}
 
+/* --- MEDIA QUERIES --- */
+@media screen and (min-width: 768px) {
+  /* - BASE DESTINATIONS - */
   .destination-block header .destination-image {
     height: 452px;
-    width: 648px;
   }
 
   .destination-block.tokyo header .destination-image {
@@ -68,19 +67,14 @@
 }
 
 @media screen and (min-width: 1024px) {
+  /* - BASE DESTINATIONS - */
   .destinations-container {
     flex-direction: row;
-    flex-wrap: wrap;
     gap: 24px;
-  }
-
-  .destination-block {
-    width: 412px;
   }
 
   .destination-block header .destination-image {
     height: 380px;
-    width: 412px;
   }
 
   .destination-block.tokyo header .destination-image {
@@ -91,22 +85,20 @@
     background-image: url(../img/destinations/osaka-tablet-desktop.jpg);
   }
 
-  .destination-block p {
-    height: 216px;
+  /* - BLOG DESTINATIONS - */
+  .destinations-container.blog {
+    flex-direction: column;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .destination-block {
-    width: 588px;
-  }
-
+  /* - BASE DESTINATIONS - */
   .destination-block header .destination-image {
     height: 452px;
-    width: 588px;
   }
 
-  .destination-block p {
-    height: auto;
+  /* - BLOG DESTINATIONS - */
+  .destinations-container.blog {
+    flex-direction: row;
   }
 }
