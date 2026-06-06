@@ -1,0 +1,9 @@
+.blog-post .main-post {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.blog-post .main-post article .text-content .content-title {
+  padding-bottom: 24px;
+}
