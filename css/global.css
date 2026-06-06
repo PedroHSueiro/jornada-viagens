@@ -138,6 +138,10 @@ section.hero {
       var(--section-horizontal-padding-desktop);
   }
 
+  .section-title h2 {
+    max-width: 700px;
+  }
+
   .button:hover {
     background-color: var(--highlight-secondary-color);
   }
