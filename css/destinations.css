@@ -46,6 +46,18 @@
   height: 300px;
 }
 
+.blog .destination-block.osaka header .destination-image {
+  background-image: url(../img/destinations/blog/osaka-blog-mobile.jpg);
+}
+
+.blog .destination-block.hiroshima header .destination-image {
+  background-image: url(../img/destinations/blog/hiroshima-blog-mobile.jpg);
+}
+
+.blog .destination-block.kyoto header .destination-image {
+  background-image: url(../img/destinations/blog/kyoto-blog-mobile.jpg);
+}
+
 /* --- MEDIA QUERIES --- */
 @media screen and (min-width: 768px) {
   /* - BASE DESTINATIONS - */
@@ -64,6 +76,19 @@
   .destination-block footer .button {
     width: 280px;
   }
+
+  /* - BLOG DESTINATIONS - */
+  .blog .destination-block.osaka header .destination-image {
+    background-image: url(../img/destinations/blog/osaka-blog-tablet.jpg);
+  }
+
+  .blog .destination-block.hiroshima header .destination-image {
+    background-image: url(../img/destinations/blog/hiroshima-blog-tablet.jpg);
+  }
+
+  .blog .destination-block.kyoto header .destination-image {
+    background-image: url(../img/destinations/blog/kyoto-blog-tablet.jpg);
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -75,14 +100,6 @@
 
   .destination-block header .destination-image {
     height: 380px;
-  }
-
-  .destination-block.tokyo header .destination-image {
-    background-image: url(../img/destinations/tokyo-tablet-desktop.jpg);
-  }
-
-  .destination-block.osaka header .destination-image {
-    background-image: url(../img/destinations/osaka-tablet-desktop.jpg);
   }
 
   /* - BLOG DESTINATIONS - */
