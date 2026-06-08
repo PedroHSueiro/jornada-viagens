@@ -16,6 +16,7 @@
 
   --text-primary-color: #222222;
   --text-secondary-color: #ffffff;
+  --text-tertiary-color: #8c8c8c;
 
   --inputbox-primary-color: #d9d9d9;
 
@@ -54,6 +55,11 @@ section {
 
 section.hero {
   padding: 0;
+}
+
+button {
+  border-style: none;
+  font-family: var(--font-main-name);
 }
 
 .page-title h1 {

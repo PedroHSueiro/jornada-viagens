@@ -1,0 +1,111 @@
+.contact-form .content-text {
+  text-align: center;
+  padding-top: 24px;
+  padding-bottom: 56px;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 64px;
+}
+
+.contact-form form fieldset {
+  display: grid;
+  border: none;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 64px;
+  column-gap: 24px;
+}
+
+.contact-form form fieldset input {
+  width: 100%;
+  padding: 0px 0px 5px;
+  grid-column: 2 span;
+  border-style: none none solid;
+  border-color: var(--inputbox-primary-color);
+  border-width: 3px;
+  font-family: var(--font-main-name);
+  color: var(--text-primary-color);
+  font-size: 20px;
+  line-height: 32px;
+
+  &::placeholder {
+    color: var(--text-tertiary-color);
+    font-weight: var(--menu-font-weight);
+  }
+
+  &:focus {
+    outline: none;
+    border-style: none none solid;
+    border-color: var(--highlight-primary-color);
+    color: var(--text-primary-color);
+
+    &::placeholder {
+      color: var(--text-primary-color);
+    }
+  }
+}
+
+.contact-form form fieldset .topic-group {
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  grid-column: 2 span;
+  gap: 8px;
+}
+
+.contact-form form fieldset label {
+  display: inline-block;
+  color: var(--text-tertiary-color);
+  font-weight: var(--menu-font-weight);
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.contact-form form fieldset textarea {
+  width: 100%;
+  height: 90px;
+  padding: 0px 4px;
+  border-style: solid;
+  border-color: var(--inputbox-primary-color);
+  border-width: 3px;
+  border-radius: 8px;
+  font-family: var(--font-main-name);
+  color: var(--text-primary-color);
+  font-size: 20px;
+  line-height: 32px;
+
+  &:focus {
+    outline: none;
+    border-color: var(--highlight-primary-color);
+
+    + label {
+      color: var(--text-primary-color);
+    }
+  }
+}
+
+.contact-form form .button {
+  width: 100%;
+  align-self: center;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-form .content-text.small {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .contact-form form .button {
+    width: 280px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .contact-form form fieldset input[type="tel"],
+  .contact-form form fieldset input[type="email"] {
+    grid-column: 1 span;
+  }
+}
