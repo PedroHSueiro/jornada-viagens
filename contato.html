@@ -87,6 +87,39 @@
         </h2>
       </div>
     </section>
+    <section class="contact-form">
+      <div class="section-title">
+        <h2>Preencha o formulário:</h2>
+        <hr class="separation-line" />
+      </div>
+      <p class="content-text">
+        Temos uma equipe sempre em prontidão para resolver suas dúvidas,
+        problemas, trazer dicas e orientações objetivas para tornar sua
+        experiência o mais prazerosa e tranquila possível. Preencha seus dados
+        que vamos retornar seu contato conforme a urgência do seu chamado. Pode
+        confiar!
+      </p>
+      <form action="" method="get">
+        <input type="text" name="clientName" placeholder="Seu nome" required />
+
+        <input
+          type="number"
+          name="clientPhone"
+          placeholder="Telefone"
+          pattern="[0-9]{11}"
+          required
+        />
+
+        <input type="email" name="clientEmail" placeholder="Email" required />
+
+        <input type="text" name="topic" placeholder="Assunto" required />
+
+        <label for="topicArea">Assunto</label>
+        <textarea name="topicDescription" id="topicArea" required></textarea>
+
+        <button type="submit">Enviar!</button>
+      </form>
+    </section>
     <section class="bottom-hero contact">
       <div class="hero-image"></div>
     </section>
