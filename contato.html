@@ -100,26 +100,36 @@
         confiar!
       </p>
       <form action="" method="get">
-        <input type="text" name="clientName" placeholder="Seu nome" required />
+        <fieldset>
+          <input
+            type="text"
+            name="clientName"
+            placeholder="Seu nome"
+            required
+          />
 
-        <input
-          type="tel"
-          name="clientPhone"
-          placeholder="Telefone"
-          pattern="[0-9]{11}"
-          maxlength="11"
-          required
-        />
+          <input
+            type="tel"
+            name="clientPhone"
+            placeholder="Telefone"
+            pattern="[0-9]{11}"
+            maxlength="11"
+            required
+          />
 
-        <input type="email" name="clientEmail" placeholder="Email" required />
+          <input type="email" name="clientEmail" placeholder="Email" required />
 
-        <input type="text" name="topic" placeholder="Assunto" required />
+          <input type="text" name="topic" placeholder="Assunto" required />
 
-        <div class="topic-group">
-          <textarea name="topicDescription" id="topicArea" required></textarea>
-          <label for="topicArea">Assunto</label>
-        </div>
-
+          <div class="topic-group">
+            <textarea
+              name="topicDescription"
+              id="topicArea"
+              required
+            ></textarea>
+            <label for="topicArea">Assunto</label>
+          </div>
+        </fieldset>
         <button type="submit" class="button" title="Enviar dados para contato">
           Enviar!
         </button>
