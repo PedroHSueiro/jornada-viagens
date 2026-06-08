@@ -62,6 +62,17 @@
     var(--hero-overlay), url(../img/hero/blog/hero-banner-blog-mobile.jpg);
 }
 
+/* --- CONTACT HERO --- */
+.hero.page.contact .hero-image {
+  background-position: left;
+  background-image:
+    var(--hero-overlay), url(../img/hero/contact/hero-banner-contact-mobile.jpg);
+}
+
+.bottom-hero.contact .hero-image {
+  background-image: url(../img/hero/contact/footer-banner-contact-mobile.jpg);
+}
+
 /* --- MEDIA QUERIES --- */
 @media screen and (min-width: 768px) {
   /* - BASE HERO - */
@@ -104,6 +115,18 @@
     background-image:
       var(--hero-overlay), url(../img/hero/blog/hero-banner-blog-tablet.jpg);
   }
+
+  /* - CONTACT HERO - */
+  .hero.page.contact .hero-image {
+    background-position: center;
+    background-image:
+      var(--hero-overlay),
+      url(../img/hero/contact/hero-banner-contact-tablet.jpg);
+  }
+
+  .bottom-hero.contact .hero-image {
+    background-image: url(../img/hero/contact/footer-banner-contact-tablet.jpg);
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -143,6 +166,17 @@
   .hero.page.blog .hero-image {
     background-image:
       var(--hero-overlay), url(../img/hero/blog/hero-banner-blog-desktop.jpg);
+  }
+
+  /* - CONTACT HERO - */
+  .hero.page.contact .hero-image {
+    background-image:
+      var(--hero-overlay),
+      url(../img/hero/contact/hero-banner-contact-desktop.jpg);
+  }
+
+  .bottom-hero.contact .hero-image {
+    background-image: url(../img/hero/contact/footer-banner-contact-desktop.jpg);
   }
 }
 
