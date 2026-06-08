@@ -92,7 +92,7 @@
         <h2>Preencha o formulário:</h2>
         <hr class="separation-line" />
       </div>
-      <p class="content-text">
+      <p class="content-text small">
         Temos uma equipe sempre em prontidão para resolver suas dúvidas,
         problemas, trazer dicas e orientações objetivas para tornar sua
         experiência o mais prazerosa e tranquila possível. Preencha seus dados
@@ -103,10 +103,11 @@
         <input type="text" name="clientName" placeholder="Seu nome" required />
 
         <input
-          type="number"
+          type="tel"
           name="clientPhone"
           placeholder="Telefone"
           pattern="[0-9]{11}"
+          maxlength="11"
           required
         />
 
@@ -114,10 +115,14 @@
 
         <input type="text" name="topic" placeholder="Assunto" required />
 
-        <label for="topicArea">Assunto</label>
-        <textarea name="topicDescription" id="topicArea" required></textarea>
+        <div class="topic-group">
+          <textarea name="topicDescription" id="topicArea" required></textarea>
+          <label for="topicArea">Assunto</label>
+        </div>
 
-        <button type="submit">Enviar!</button>
+        <button type="submit" class="button" title="Enviar dados para contato">
+          Enviar!
+        </button>
       </form>
     </section>
     <section class="bottom-hero contact">
